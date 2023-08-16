@@ -6,12 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>text editor</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+   /* #text{
+    text-align: ju;
+  } */
+  </style>
 </head>
 <body>
-  <main class="max-w-screen-lg bg-slate-400 mx-auto mt-14">
-    <h1 class="text-center text-white font-semibold">My Text Editor</h1>
-
+  <main class="max-w-screen-xl bg-slate-400 mx-auto m-14 pb-10 pt-5">
+    <h1 class="text-center text-white font-semibold mb-5 text-2xl font-mono">My Text Editor</h1>
+    <section class="bg-slate-300 p-6 max-w-screen-lg mx-auto">
+      <div  class="flex justify-between">
+        <div class="flex gap-6">
+          <button id="bold" class=""><i class="fa-solid fa-bold"></i></button>
+          <button id="italic" class=""><i class="fa-solid fa-italic"></i></button>
+          <button id="underline" class=""><i class="fa-solid fa-underline"></i></button>
+        </div>
+        <div class="flex gap-6">
+          <button id="align-left" class=""><i class="fa-solid fa-align-left "></i></button>
+          <button id="align-right" class=""><i class="fa-solid fa-align-right"></i></button>
+          <button id="align-center" class=""><i class="fa-solid fa-align-center"></i></button>
+          <button id="align-justify" class=""><i class="fa-solid fa-align-justify"></i></button>
+        </div>
+        <div class="flex gap-6">
+          <input type="number" class="w-16" name="" id="size">
+          <input type="color" name="" id="color">
+        </div>
+      </div>
+      <textarea class="w-full outline-none mt-6 h-96" name="" id="text" cols="30" rows="10">I love you Eka :)</textarea>
+    </section>
   </main>
-  
+  <script src="https://kit.fontawesome.com/860ec9f204.js" crossorigin="anonymous"></script>
+  <script src="./js/function.js" ></script>
+  <script src="./js/style.js" ></script>
+  <script src="./js/align.js" ></script>
+  <script src="./js/color.js" ></script>
 </body>
 </html>
